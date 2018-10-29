@@ -1,4 +1,4 @@
-# Content Generation Repository
+# Automatic Content Generation Repository
 
 This repository's primary purpose is to make document generation easier for CS170 staff. This includes homeworks, discussion worksheets, practice worksheets (for practice exams or guerilla sections) and exams. At a high level, here is how the process works:
 - The `src` folder contains the LaTeX files for the problems and solutions. This is where you will add new problems.
