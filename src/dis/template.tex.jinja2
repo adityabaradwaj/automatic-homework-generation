@@ -1,0 +1,22 @@
+\documentclass[11pt]{article}
+\usepackage{cs170}
+
+\def\title{\VAR{title}}
+
+\renewenvironment{solution}{
+	\comment
+}{
+	\endcomment
+}
+\renewcommand{\stars}[1]{}
+
+\begin{document}
+\maketitle
+\subsection*{Released on \VAR{date}}
+
+\BLOCK{for question in questions}
+\input{\VAR{question}}
+
+\BLOCK{endfor}
+
+\end{document}

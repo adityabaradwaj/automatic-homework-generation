@@ -1,0 +1,15 @@
+#! /bin/bash
+
+for f in src/hw/hw$1-img*.tex
+do
+  pdflatex --output-directory=rendered/hw$1 --shell-escape $f
+done
+
+cd rendered/hw$1
+
+for f in hw$1-img*.pdf
+do
+  png=$(echo $f | sed 's/pdf/png/')
+  echo "Creating image file: $png"
+  convert -density 300 $f $png
+done

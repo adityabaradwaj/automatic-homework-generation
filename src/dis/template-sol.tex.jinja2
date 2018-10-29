@@ -1,0 +1,19 @@
+\documentclass[11pt]{article}
+\usepackage{cs170}
+
+\def\title{ \VAR{title} }
+
+\renewcommand{\vspace}[1]{}
+
+\renewcommand{\stars}[1]{}
+
+\begin{document}
+\maketitle
+\subsection*{Released on \VAR{date}}
+
+\BLOCK{for question in questions}
+\input{\VAR{question}}
+
+\BLOCK{endfor}
+
+\end{document}
