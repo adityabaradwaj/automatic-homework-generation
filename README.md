@@ -135,7 +135,7 @@ This will create two PDF files:
 - `rendered/dis03/dis03b-sol.pdf`
 
 What's going on when you run the command?
-- First, the Ruby script `generate.rb` is run to generate the `.tex` files from the JSON data file, along with the embedded Ruby template files (files ending with `.tex.jinja2`). (After rendering, you should find the generated `.tex` files in `src/[category]`.
+- First, the Ruby script `generate.py` is run to generate the `.tex` files from the JSON data file, along with the embedded Ruby template files (files ending with `.tex.jinja2`). (After rendering, you should find the generated `.tex` files in `src/[category]`.
 - Then, the generated `.tex` files are compiled into `.pdf` files, and dumped into the `rendered` directory.
 
 ## Viewing Problems
